@@ -1,7 +1,7 @@
 // Trabalho final de Projeto e analise de algoritmos
 // Prof. Marco antonio
 // Alunos: Marcos Rodolfo C. G. Querino
-//         Christy Basílio da Silvaj
+
  
 #include <bits/stdc++.h>
  
@@ -52,7 +52,7 @@ int find(Subconjunto subset[], int v)
 {   
     // encontrar a raiz e torna la pai de "i" (compressao de caminho)
     if (subset[v].pai != v) // se o que esta no atributo "pai" do subconjunto "v" for diferente de "v" 
-    {                       // entao "pai" recebe retorno dessa funcao, pesquisando
+    {                       // entao "pai" recebe retorno dessa funcao
     	subset[v].pai= find(subset, subset[v].pai); 
 	}		
     return subset[v].pai;  
